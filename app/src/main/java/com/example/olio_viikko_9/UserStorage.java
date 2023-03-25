@@ -23,6 +23,7 @@ public class UserStorage {
 
     }
 
-
-
+    public ArrayList<User> getUsers() {
+        return users;
+    }
 }

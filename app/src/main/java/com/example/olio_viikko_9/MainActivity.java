@@ -18,12 +18,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void toAddUsers(View view) {
-        Intent intent = new Intent(this, AddUsers.class);
+        Intent intent = new Intent(this, AddUsersActivity.class);
         startActivity(intent);
     }
 
     public void toListUsers(View view) {
-        Intent intent = new Intent(this, ListUsers.class);
+        Intent intent = new Intent(this, ListUsersActivity.class);
         startActivity(intent);
     }
 

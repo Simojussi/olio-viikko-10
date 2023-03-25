@@ -9,7 +9,7 @@
     <EditText
         android:id="@+id/inputUserEmail"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Sähköpostiosoite"
@@ -43,7 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/inputUserFirstName" />
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/rgChooseDegreeProgram"
         android:layout_width="211dp"
         android:layout_height="190dp"
         android:layout_marginTop="200dp"
@@ -71,10 +71,10 @@
             android:text="Laskennallinen tekniikka" />
 
         <RadioButton
-            android:id="@+id/rbKeTe"
+            android:id="@+id/rbSäTe"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Kemiantekniikka" />
+            android:layout_height="48dp"
+            android:text="Sähkötekniikka" />
 
     </RadioGroup>
 
@@ -83,9 +83,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:onClick="addUser"
         android:text="Lisää käyttäjä"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/rgChooseDegreeProgram" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
