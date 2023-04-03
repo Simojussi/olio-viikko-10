@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/tv"
     android:layout_width="match_parent"
-    android:layout_height="90dp"
+    android:layout_height="125dp"
     android:layout_marginTop="2dp"
     android:background="#F67850">
 
@@ -26,14 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/tvLastName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            android:textSize="16sp" />
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/tvEmail"
@@ -46,6 +39,17 @@
             android:id="@+id/tvDegreeProgram"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvDegrees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:minLines="1"
             android:text="TextView"
             android:textSize="16sp" />
     </LinearLayout>

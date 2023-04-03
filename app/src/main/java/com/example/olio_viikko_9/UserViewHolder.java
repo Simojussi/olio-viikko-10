@@ -13,6 +13,7 @@ public class UserViewHolder extends RecyclerView.ViewHolder {
     TextView userLastName;
     TextView userEmail;
     TextView userDegreeProgram;
+    TextView userDegrees;
 
     //ImageView userImage;
 
@@ -20,9 +21,9 @@ public class UserViewHolder extends RecyclerView.ViewHolder {
         super(itemView);
         //image = itemView.findViewById(R.id.imageViewUser);
         userFirstName = itemView.findViewById(R.id.tvFirstName);
-        userLastName = itemView.findViewById(R.id.tvLastName);
         userEmail = itemView.findViewById(R.id.tvEmail);
         userDegreeProgram = itemView.findViewById(R.id.tvDegreeProgram);
+        userDegrees = itemView.findViewById(R.id.tvDegrees);
 
 
 

@@ -26,10 +26,15 @@ public class UserListAdapter extends RecyclerView.Adapter<UserViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull UserViewHolder holder, int position) {
-        holder.userFirstName.setText(users.get(position).getFirstName());
-        holder.userLastName.setText(users.get(position).getLastName());
+        holder.userFirstName.setText(users.get(position).getLastName() + " " + users.get(position).getFirstName());
         holder.userEmail.setText(users.get(position).getEmail());
         holder.userDegreeProgram.setText(users.get(position).getDegreeProgram());
+        ArrayList<String> d = users.get(position).getDegrees();
+        for (String degree : d) {
+            holder.userDegrees.setText(d + ", ");
+        }
+
+
         //holder.userImage.setImageResource(users.get(position).getImage());
 
 
